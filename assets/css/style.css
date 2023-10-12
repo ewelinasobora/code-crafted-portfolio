@@ -63,7 +63,7 @@ p {
 
 #navigation li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 #navigation a {
@@ -106,12 +106,133 @@ p {
   padding: 10px 1%;
   bottom: 0;
   right: 0;
-  /* top right */
   margin: 20px 50px;
+}
+
+/* Main */
+
+.page-wrapper {
+  margin-left: 80px;
+  margin-right: 50px;
+
+}
+
+/* About Me */
+#about {
+  display: flex;
+}
+
+#about-header {
+  padding-right: 2%;
+  text-align: right;
+  width: 20%;
+}
+
+#about-paragraph {
+  border-left: #32343d solid;
+  padding-left: 2%;
+  width: 80%;
+}
+
+/* Work */
+#work {
+  display: flex;
+}
+
+#work-header {
+  padding-right: 2%;
+  text-align: right;
+  width: 20%;
+}
+
+#work-content {
+  border-left: #32343d solid;
+  padding-left: 2%;
+  width: 80%;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+#portfolio-1 {
+  background-image: url("../../images/02-portfolio-1.jpg");
+}
+
+#portfolio-2 {
+  background-image: url("../../images/02-portfolio-2.jpg");
+}
+
+#portfolio-3 {
+  background-image: url("../../images/02-portfolio-3.jpg");
+}
+
+#portfolio-4 {
+  background-image: url("../../images/02-portfolio-4.jpg");
+}
+
+#portfolio-5 {
+  background-image: url("../../images/02-run-buddy.jpg");
+}
+
+.portfolioGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  align-content: end;
+}
+
+.heading {
+  padding: 15px;
+  color: var(--graphite);
+  font-size: 18px;
+  align-content: center;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+}
+
+#contact-header {
+  padding-right: 2%;
+  text-align: right;
+  width: 20%;
+}
+
+#contact-list {
+  padding-left: 2%;
+  border-left: #32343d solid;
+  width: 80%;
+}
+
+#contact-list li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#contact-list a {
+  position: relative;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: var(--graphite);
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
+}
+
+/* Page wrapper headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 500px) {
   #navBar {
+    width: auto;
+  }
+
+  .page-wrapper {
     width: auto;
   }
 }
