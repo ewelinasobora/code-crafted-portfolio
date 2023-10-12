@@ -2,6 +2,7 @@
   --graphite: #32343d;
   --light: #cfcfe6;
   --light-brown: #a39691;
+  --yellow-banner: rgba(160, 161, 122);
 }
 
 * {
@@ -78,6 +79,27 @@ p {
   background-color: var(--light-brown);
 }
 
+/* Hero Banner */
+.hero-banner {
+  background-image: url("../../images/02-hero-bg.jpg");
+  max-width: 100%;
+  margin-bottom: 2%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(181, 145, 102, 0.5);
+}
 
 @media screen and (max-width: 500px) {
   #navBar {
